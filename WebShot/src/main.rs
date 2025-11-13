@@ -8,7 +8,15 @@
 //! Version: 1.0
 //! Date: 12/11/2025
 
+/// Declare module utils
+mod utils;
+
 /// Entry point of the WebShot CLI tool.
 fn main() {
-    println!("Hello, daniel!");
+
+    // get cmd args 
+    let args = utils::get_command_line_args();
+
+    // print args - run with 'cargo run -- apple banana peach'
+    println!("CMD Args: {:?}", args);
 }
