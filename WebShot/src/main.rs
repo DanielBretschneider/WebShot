@@ -14,7 +14,7 @@ mod utils;
 /// Entry point of the WebShot CLI tool.
 fn main() {
 
-    // get cmd args 
+    // get cmd args from utils
     let args = utils::get_command_line_args();
 
     // print args - run with 'cargo run -- apple banana peach'
